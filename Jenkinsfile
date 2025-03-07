@@ -20,10 +20,10 @@ pipeline {
         TRUSTIFICATION_OIDC_CLIENT_SECRET = credentials('TRUSTIFICATION_OIDC_CLIENT_SECRET')
         TRUSTIFICATION_SUPPORTED_CYCLONEDX_VERSION = credentials('TRUSTIFICATION_SUPPORTED_CYCLONEDX_VERSION')
         /* Set this to the user for your specific registry */
-        /* IMAGE_REGISTRY_USER = credentials('IMAGE_REGISTRY_USER') */
+        IMAGE_REGISTRY_USER = credentials('IMAGE_REGISTRY_USER')
         /* Set this password for your specific registry */
-        /* IMAGE_REGISTRY_PASSWORD = credentials('IMAGE_REGISTRY_PASSWORD') */
-        QUAY_IO_CREDS = credentials('QUAY_IO_CREDS')
+        IMAGE_REGISTRY_PASSWORD = credentials('IMAGE_REGISTRY_PASSWORD')
+        /* QUAY_IO_CREDS = credentials('QUAY_IO_CREDS') /*
         /* ARTIFACTORY_IO_CREDS = credentials('ARTIFACTORY_IO_CREDS') */
         /* NEXUS_IO_CREDS = credentials('NEXUS_IO_CREDS') */
         /* Set when using Jenkins on non-local cluster and using an external Rekor instance */
